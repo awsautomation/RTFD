@@ -187,30 +187,3 @@ Cannot enable logging. Policy document length breaking Cloudwatch Logs Constrain
 ```
 
 It's caused by [CloudWatch Logs resource policies are limited to 5120 characters][cloudwatch-logs-limit]. The remediation is merging or removing useless policies then update the resource policy of CloudWatch logs to reduce the characters of policies.
-
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This project is licensed under the Apache-2.0 License.
-
-[dgl]: https://www.dgl.ai/
-[neptune]: https://aws.amazon.com/neptune/
-[sagemaker]: https://aws.amazon.com/sagemaker/
-[cloudfront]: https://aws.amazon.com/cloudfront/
-[amplify]: https://aws.amazon.com/amplify/
-[appsync]: https://aws.amazon.com/appsync/
-[docdb]: https://aws.amazon.com/documentdb/
-[api]: https://aws.amazon.com/api-gateway/
-[step-functions]: https://aws.amazon.com/stepfunctions/
-[ieee-fraud-detection]: https://www.kaggle.com/c/ieee-fraud-detection/
-[configure-aws-cli]: https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/cli-chap-configure.html
-[aws-cdk]: https://aws.amazon.com/cdk/
-[cfn-stack]: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html
-[create-public-hosted-zone]: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingHostedZone.html
-[deployment-guide]: https://awslabs.github.io/realtime-fraud-detection-with-gnn-on-dgl/en/deployment/
-[cloudwatch-logs-limit]: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-CWL
-[serverless-inference]: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints.html
-[blog]: https://aws.amazon.com/blogs/machine-learning/build-a-gnn-based-real-time-fraud-detection-solution-using-amazon-sagemaker-amazon-neptune-and-the-deep-graph-library/
